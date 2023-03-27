@@ -8,9 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-    Finder finder = new Finder();
-    List<String> links = finder.getAllLinksFromTable();
-    links.stream().forEach(e -> System.out.println(e));
+        GameStatsLinkFinder finder = new GameStatsLinkFinder();
+        List<String> links = finder.getAllLinksFromTable("28/03/2023");
+
 
     }
 }
